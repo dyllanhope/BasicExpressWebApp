@@ -5,7 +5,7 @@ module.exports = function(productService, categoryService) {
 	async function show(req, res, next) {
 		try {
 			let results = await productService.all(); 
-			res.render('products/home', {
+			res.render('products/home', { 
 				no_products: results.length === 0,
 				products: results,
 			});

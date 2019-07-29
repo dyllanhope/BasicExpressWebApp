@@ -1,5 +1,5 @@
 
-module.exports = function(productService) {
+module.exports = function(productService) { 
 	
 	async function all(req, res) {
 		try {
@@ -77,7 +77,7 @@ module.exports = function(productService) {
 			var id = req.params.id;
 			await productService.delete(id);
 			res.json({
-				status: "success"
+				status: "success" 
 			});
 		}
 		catch(err){

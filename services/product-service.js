@@ -6,7 +6,7 @@ module.exports = function ProductService(pool){
         let results = await pool.query(query);
         return results.rows;
     }
-    async function create(product){
+    async function create(product){  
         let data = [
             product.category_id,
             product.description,

@@ -58,9 +58,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-function errorHandler(err, req, res, next) {
+function errorHandler(err, req, res, next) { 
   res.status(500);
-  res.render('error', { error: err });
+  res.render('error', { error: err }); 
 }
 
 //setup the handlers

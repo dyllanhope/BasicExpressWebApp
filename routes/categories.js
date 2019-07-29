@@ -1,6 +1,6 @@
-
+ 
 /***
- * A very basic CRUD example using PostgreSQL
+ * A very basic CRUD example using PostgreSQL 
  */
 
 module.exports = function CategoryRoutes(categoryService) {

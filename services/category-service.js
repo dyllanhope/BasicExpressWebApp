@@ -1,4 +1,4 @@
-module.exports = function CategoryService(pool){
+module.exports = function CategoryService(pool){  
     async function all(){
         let categories = await pool.query('SELECT * from categories');
         return categories.rows;

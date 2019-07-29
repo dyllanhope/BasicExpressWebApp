@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Client side Factory function
     let productService = ProductService();
-
+ 
     function showCategoryDropdown() {
         axios
         .get('/api/categories')
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     });
 
-    showCategoryDropdown();
+    showCategoryDropdown(); 
     showProducts();
 
 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function editProduct(id) {
     alert(id);
 }
-
+ 
 function ProductService() {
     function getProducts(){
         return axios.get('/api/products')

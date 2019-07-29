@@ -59,7 +59,7 @@ module.exports = function (categoryService) {
 
 		try {
 			const data = req.body;
-			const id = req.params.id;
+			const id = req.params.id; 
 			const description = data.description;
 
 			await categoryService.update({
